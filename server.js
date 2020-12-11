@@ -2,7 +2,7 @@
 
 const app = require('./src/config/app');
 
-app.listen(3002, function () {
+app.listen(process.env.PORT || 5000, function () {
     console.log('Start server');
-    console.log('Service is running');
+    console.log('Authen service is running');
 });
